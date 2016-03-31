@@ -32,6 +32,7 @@ public class TestSmallCodePerson extends TestAbstPerson{
     
     @Before
     public void setUp() {
+        super.setUp();
         person = new SmallCodePerson("Toto", "LastNameToto", 1994, 07, 27);
     }
     

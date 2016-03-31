@@ -32,6 +32,7 @@ public class TestEfficientPerson extends TestAbstPerson{
     
     @Before
     public void setUp() {
+        super.setUp();
         person = new EfficientPerson("Toto", "LastNameToto", 1994, 07, 27);
     }
     

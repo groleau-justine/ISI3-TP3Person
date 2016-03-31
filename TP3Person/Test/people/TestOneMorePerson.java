@@ -32,6 +32,7 @@ public class TestOneMorePerson extends TestAbstPerson{
     
     @Before
     public void setUp() {
+        super.setUp();
         person = new OneMorePerson("Toto", "LastNameToto", 1994, 07, 27);
     }
     
