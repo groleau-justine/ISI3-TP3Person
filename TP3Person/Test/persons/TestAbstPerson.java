@@ -94,7 +94,6 @@ public abstract class TestAbstPerson {
         anneeMoisApresJourAvant = new GregorianCalendar(1995, Calendar.AUGUST, 26);
         anneeMoisApres = new GregorianCalendar(1995, Calendar.AUGUST, 27);
         anneeMoisJourApres = new GregorianCalendar(1995, Calendar.AUGUST, 28);
-
     }
 
     @After
@@ -146,7 +145,6 @@ public abstract class TestAbstPerson {
         
         test = person.wasBorn(dateNaissance);
         assertTrue(test);
-
     }
 
     @Test

@@ -5,12 +5,10 @@
  */
 package persons;
 
-import java.util.GregorianCalendar;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
-
 
 /**
  *
@@ -31,12 +29,14 @@ public class TestPerson extends TestAbstPerson {
     }
     
     @Before
+    @Override
     public void setUp() {
         super.setUp();
         person = new Person("Toto", "LastNameToto", 1994, 07, 27);
     }
     
     @After
+    @Override
     public void tearDown() {
     }
    

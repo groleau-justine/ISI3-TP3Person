@@ -9,8 +9,6 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
 import persons.TestAbstPerson;
 
 /**
@@ -31,12 +29,14 @@ public class TestSmallCodePerson extends TestAbstPerson{
     }
     
     @Before
+    @Override
     public void setUp() {
         super.setUp();
         person = new SmallCodePerson("Toto", "LastNameToto", 1994, 07, 27);
     }
     
     @After
+    @Override
     public void tearDown() {
     }
 
